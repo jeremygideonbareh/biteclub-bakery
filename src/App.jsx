@@ -30,7 +30,7 @@ function App() {
         {loading && (
           <motion.div
             key="loader"
-            className="fixed inset-0 z-50 flex items-center justify-center bg-[#F7F4F0]"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-background"
             exit={{ opacity: 0, transition: { duration: 0.5 } }}
           >
             <Loader />

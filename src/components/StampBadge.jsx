@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-export default function StampBadge({ label, sublabel, color = '#B86C4A' }) {
+export default function StampBadge({ label, sublabel, color = 'var(--main)' }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5, rotate: -10 }}

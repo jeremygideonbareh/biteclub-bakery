@@ -2,9 +2,9 @@ const Loader = () => {
   const loaderCss = `
     .loader {
       --duration: 3s;
-      --primary: #B86C4A;
-    --primary-light: #D49A7A;
-    --primary-rgba: rgba(184, 108, 74, 0);
+      --primary: #F2C4B0;
+    --primary-light: #F7D8C8;
+    --primary-rgba: rgba(242, 196, 176, 0);
       width: 200px;
       height: 320px;
       position: relative;
@@ -23,7 +23,7 @@ const Loader = () => {
       position: absolute;
       right: 32%;
       bottom: -11px;
-      background: #F7F4F0;
+      background: #FDFBF8;
       transform: translateZ(200px) rotate(var(--r));
       animation: mask var(--duration) linear forwards infinite;
     }

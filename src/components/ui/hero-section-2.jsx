@@ -132,7 +132,7 @@ const HeroSection = React.forwardRef(
         </div>
 
         {/* Right Side: Cinematic cake shot */}
-        <div className="relative w-full min-h-[50vh] md:w-[50%] md:min-h-screen flex items-center justify-center overflow-hidden bg-[#1A1512]">
+        <div className="relative w-full min-h-[50vh] md:w-[50%] md:min-h-screen flex items-center justify-center overflow-hidden bg-[#F5F0EB]">
           <motion.div
             initial={{ opacity: 0, scale: 1.1 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -148,8 +148,8 @@ const HeroSection = React.forwardRef(
               />
             )}
           </motion.div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1A1512]/70 via-transparent to-[#1A1512]/30" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1A1512]/40 via-transparent to-[#1A1512]/20" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#F5F0EB]/80 via-transparent to-[#F5F0EB]/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#F5F0EB]/50 via-transparent to-transparent" />
         </div>
       </motion.section>
     )

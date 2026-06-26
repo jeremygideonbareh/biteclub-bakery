@@ -77,12 +77,12 @@ export default function Gallery() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-3 md:p-4"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-white/95 backdrop-blur-sm p-3 md:p-4"
             onClick={() => setSelected(null)}
           >
             <button
               onClick={(e) => { e.stopPropagation(); setSelected(null) }}
-              className="absolute top-3 right-3 md:top-4 md:right-4 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors z-10"
+              className="absolute top-3 right-3 md:top-4 md:right-4 w-9 h-9 md:w-10 md:h-10 rounded-full bg-foreground/5 flex items-center justify-center text-foreground/60 hover:bg-foreground/10 transition-colors z-10"
               aria-label="Close"
             >
               <X size={18} />
@@ -90,7 +90,7 @@ export default function Gallery() {
 
             <button
               onClick={(e) => { e.stopPropagation(); goPrev() }}
-              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors z-10"
+              className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 w-9 h-9 md:w-10 md:h-10 rounded-full bg-foreground/5 flex items-center justify-center text-foreground/60 hover:bg-foreground/10 transition-colors z-10"
               aria-label="Previous"
             >
               <ChevronLeft size={18} />
@@ -98,7 +98,7 @@ export default function Gallery() {
 
             <button
               onClick={(e) => { e.stopPropagation(); goNext() }}
-              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors z-10"
+              className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 w-9 h-9 md:w-10 md:h-10 rounded-full bg-foreground/5 flex items-center justify-center text-foreground/60 hover:bg-foreground/10 transition-colors z-10"
               aria-label="Next"
             >
               <ChevronRight size={18} />
@@ -116,7 +116,7 @@ export default function Gallery() {
               onClick={(e) => e.stopPropagation()}
             />
 
-            <p className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 text-white/80 text-xs md:text-sm bg-black/50 px-4 py-2 rounded-full whitespace-nowrap">
+            <p className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 text-foreground/70 text-xs md:text-sm bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full whitespace-nowrap">
               {selected.caption}
             </p>
           </motion.div>
