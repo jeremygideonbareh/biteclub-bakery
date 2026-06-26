@@ -35,7 +35,7 @@ export default function SignatureItems() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-30px' }}
               transition={{ duration: 0.5, delay: i * 0.05 }}
-              className="relative w-full aspect-[4/3] overflow-hidden bg-[#EDE8E0] group"
+              className="relative w-full aspect-[4/3] overflow-hidden bg-background group"
             >
               <img
                 src={item.src}
@@ -43,8 +43,8 @@ export default function SignatureItems() {
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6">
                 <h3 className="text-white font-serif text-lg md:text-xl lg:text-2xl font-medium">
                   {item.name}

@@ -23,13 +23,13 @@ const values = [
 
 const patternSVG = encodeURIComponent(`
 <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="10" cy="10" r="1.5" fill="#B86C4A" opacity="0.15"/>
-  <circle cx="50" cy="30" r="1" fill="#B86C4A" opacity="0.12"/>
-  <circle cx="30" cy="50" r="1.5" fill="#B86C4A" opacity="0.1"/>
-  <circle cx="40" cy="10" r="0.8" fill="#B86C4A" opacity="0.12"/>
-  <circle cx="20" cy="40" r="1" fill="#B86C4A" opacity="0.08"/>
-  <path d="M0 30 Q15 25 30 30 Q45 35 60 30" stroke="#B86C4A" stroke-width="0.5" fill="none" opacity="0.08"/>
-  <path d="M0 50 Q15 45 30 50 Q45 55 60 50" stroke="#B86C4A" stroke-width="0.5" fill="none" opacity="0.06"/>
+  <circle cx="10" cy="10" r="1.5" fill="#F2C8B8" opacity="0.15"/>
+  <circle cx="50" cy="30" r="1" fill="#F2C8B8" opacity="0.12"/>
+  <circle cx="30" cy="50" r="1.5" fill="#F2C8B8" opacity="0.1"/>
+  <circle cx="40" cy="10" r="0.8" fill="#F2C8B8" opacity="0.12"/>
+  <circle cx="20" cy="40" r="1" fill="#F2C8B8" opacity="0.08"/>
+  <path d="M0 30 Q15 25 30 30 Q45 35 60 30" stroke="#F2C8B8" stroke-width="0.5" fill="none" opacity="0.08"/>
+  <path d="M0 50 Q15 45 30 50 Q45 55 60 50" stroke="#F2C8B8" stroke-width="0.5" fill="none" opacity="0.06"/>
 </svg>
 `)
 

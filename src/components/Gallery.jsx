@@ -52,7 +52,7 @@ export default function Gallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-30px' }}
               transition={{ duration: 0.5, delay: i * 0.05 }}
-              className="relative w-full aspect-[4/3] overflow-hidden bg-[#EDE8E0] group cursor-pointer text-left"
+              className="relative w-full aspect-[4/3] overflow-hidden bg-background group cursor-pointer text-left"
             >
               <img
                 src={item.src}
@@ -60,8 +60,8 @@ export default function Gallery() {
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300" />
+              <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gradient-to-t from-primary/70 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-sm md:text-base font-medium tracking-wide">
                   {item.caption}
                 </p>
